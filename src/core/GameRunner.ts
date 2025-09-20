@@ -139,6 +139,7 @@ export class GameRunner {
       } else {
         console.error("Game tick error:", error);
       }
+      this.isExecuting = false;
       return;
     }
 
